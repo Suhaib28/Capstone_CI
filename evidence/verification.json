@@ -1,0 +1,9 @@
+{
+  "generatedAt": "2026-08-08T20:44:42.551Z",
+  "node": "v22.20.0",
+  "platform": "win32",
+  "arch": "x64",
+  "syntaxSourcePassed": true,
+  "syntaxTestsPassed": true,
+  "testsPassed": true
+}

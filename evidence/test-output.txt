@@ -1,0 +1,58 @@
+TAP version 13
+# Subtest: default inactivity threshold is 36 hours
+ok 1 - default inactivity threshold is 36 hours
+  ---
+  duration_ms: 1.3478
+  type: 'test'
+  ...
+# Subtest: session remains active before the 36-hour threshold
+ok 2 - session remains active before the 36-hour threshold
+  ---
+  duration_ms: 0.3324
+  type: 'test'
+  ...
+# Subtest: session becomes inactive at the configured threshold
+ok 3 - session becomes inactive at the configured threshold
+  ---
+  duration_ms: 0.1542
+  type: 'test'
+  ...
+# Subtest: future booking keeps the chat active after normal inactivity
+ok 4 - future booking keeps the chat active after normal inactivity
+  ---
+  duration_ms: 0.1672
+  type: 'test'
+  ...
+# Subtest: custom inactivity threshold is supported
+ok 5 - custom inactivity threshold is supported
+  ---
+  duration_ms: 0.1902
+  type: 'test'
+  ...
+# Subtest: hoursUntilInactive returns remaining time
+ok 6 - hoursUntilInactive returns remaining time
+  ---
+  duration_ms: 0.2129
+  type: 'test'
+  ...
+# Subtest: invalid dates are rejected
+ok 7 - invalid dates are rejected
+  ---
+  duration_ms: 1.1876
+  type: 'test'
+  ...
+# Subtest: future last-message timestamps are rejected
+ok 8 - future last-message timestamps are rejected
+  ---
+  duration_ms: 0.2371
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 176.0955

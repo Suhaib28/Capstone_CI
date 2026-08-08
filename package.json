@@ -1,0 +1,15 @@
+{
+  "name": "sportsitters-ci-competency",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Unique CI competency demonstration inspired by Sport Sitters booking-chat session handling.",
+  "scripts": {
+    "check": "node --check src/sessionPolicy.js && node --check test/sessionPolicy.test.js",
+    "test": "node --test",
+    "evidence": "node scripts/generate-evidence.js",
+    "verify": "npm run check && npm test && npm run evidence"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
